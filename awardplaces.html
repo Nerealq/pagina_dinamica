@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <title>Award places</title>
+      <meta name="description" content="This is a webpage to discover new things about the world of Cinema and all the curiosities and facts that go with it" /> 
+      <title>icono</title>
+      <link rel="icon" type="image/png" href="imgs/logo.png">
+      <link rel="stylesheet" href="style/style.css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+      <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  </head>
+
+  <body>
+  	<div>
+        <div id="banner">
+      <img src="imgs/logo.png" width="100" height="80"
+      alt="Fes click per tornar a la pàgina principal"> </div>
+
+       <header>
+         <img class="banner" src="imgs/logo.png"> 
+         <div id="logotipo">
+         <a href="index.html">
+       </header>
+       <nav id="barra">
+         <ul>
+               <li> <a href= "index.html"> Home</a> </li>
+               <li> <a href= "location.html"> Location</a> </li>
+               <li> <a href= "awardplaces.html"> Award places </a> </li>
+         </ul>
+       </nav>
+      </div>
+      <section>
+            <h1 id="titulo1">Map with the places that Awards and Fastevials around Europe take place</h1>
+            <p id="sub1">Here you can discover all the locations where European Cinema Awards and Festivals are taken palce</p>
+       </section>      
+      <div id="map" class="container rounded  leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"></div>      
+      <script type="text/javascript">
+        let map = L.map("map", {center: [48.019380, 16.335241], zoom: 3});
+        L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map)
+
+        L.marker([43.3309, 7.0117]).addTo(map);
+        L.marker([41.1402, 1.4815]).addTo(map);
+        L.marker([52.3112, 13.2436]).addTo(map);
+        L.marker([51.3004, 0.1039]).addTo(map);
+        L.marker([45.2623, 12.1955]).addTo(map);
+        L.marker([43.2918100, -1.9885100]).addTo(map);
+        L.marker([36.72016, -4.42034]).addTo(map);
+        L.marker([41.2316, 2.1012]).addTo(map);
+        L.marker([48.85341, 2.3488]).addTo(map);
+        L.marker([55.86515, -4.25763]).addTo(map);
+        L.marker([37.3828300,-5.9731700]).addTo(map);
+        L.marker([41.89193,12.51133]).addTo(map);
+        L.marker([52.22977,21.01178]).addTo(map);
+        L.marker([55.6759400,12.5655300]).addTo(map);
+        L.marker([59.43696,24.75353]).addTo(map);
+        L.marker([35.89968,14.5148]).addTo(map);
+        L.marker([56.946,24.10589]).addTo(map);
+        L.marker([51.0600,17.0159]).addTo(map);
+
+
+
+      </script>
+      <div>
+       <footer>
+          © Nerea Lara, 2021 / All Rights Reserved
+       </footer>
+      </div>
+    </body>
